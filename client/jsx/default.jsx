@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Default({ children }) {
+export function Default({ children }) {
   return (
     <html lang='en'>
       <head>
@@ -11,7 +11,7 @@ export default function Default({ children }) {
       </head>
       <body>
         {children}
-        <footer class="attribution">
+        <footer className="attribution">
           Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
           Coded by <a href="https://github.com/INS140">INS140</a>.
         </footer>

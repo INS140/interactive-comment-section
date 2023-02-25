@@ -17,3 +17,4 @@
 node_modules
 
 interactive-comments-section-main
+.env
