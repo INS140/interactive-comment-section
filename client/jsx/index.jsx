@@ -1,5 +1,5 @@
 import React from "react"
 import { hydrateRoot } from "react-dom/client"
-import { Default } from "./default.jsx"
+import { App } from "./app.jsx"
 
-hydrateRoot(document, <Default />)
+hydrateRoot(document, <App />)

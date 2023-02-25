@@ -1,9 +1,9 @@
 import React from "react"
 import { renderToPipeableStream } from "react-dom/server"
-import { Default } from "../client/jsx/default.jsx"
+import { App } from "../client/jsx/app.jsx"
 
 export const render = response => {
-    const stream = renderToPipeableStream(<Default />, {
+    const stream = renderToPipeableStream(<App />, {
         bootstrapScripts: ["client.bundle.js"],
         onShellReady() {
             response.setHeader("content-type", "text/html")

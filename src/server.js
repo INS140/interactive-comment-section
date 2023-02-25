@@ -5,7 +5,7 @@ const app = express()
 const { render } = require('./render')
 
 app.use(express.static(path.resolve(__dirname, '../build')))
-app.use(express.static(path.resolve(__dirname, '../assets')))
+app.use(express.static(path.resolve(__dirname, '../client')))
 
 app.get('/', (req, res) => {
     render(res)
