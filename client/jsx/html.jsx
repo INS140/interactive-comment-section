@@ -7,6 +7,7 @@ export function Html({ children }) {
           <meta charSet="UTF-8" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0" />
           <link rel="stylesheet" href="/styles/main.css" />
+          <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
           <title>INS140 | Interactive comments section</title>
         </head>
         <body>
