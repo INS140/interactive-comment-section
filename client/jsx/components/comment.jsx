@@ -8,16 +8,20 @@ export function Comment({ comment }) {
                 <span className="score">{comment.score}</span>
                 <button>-</button>
             </div>
-            <div className="details-container">
-                <div className="details">
-                    <img src={comment.user.image.png} alt={`${comment.user.username}'s profile photo`} />
-                    <h2>{comment.user.username}</h2>
-                    <p>{comment.createdAt}</p>
-                </div>
+            <div className="details">
+                <img 
+                    src={comment.user.image.png}
+                    alt={`${comment.user.username}'s profile photo`}
+                    className="profile-img"
+                />
+                <h2>{comment.user.username}</h2>
+                <p>{comment.createdAt}</p>
+            </div>
+            <div className="options">
                 <button>Reply</button>
-                <div className="content-container">
-                    <p className="content">{comment.content}</p>
-                </div>
+            </div>
+            <div className="content-container">
+                <p className="content">{comment.content}</p>
             </div>
         </div>
     )
