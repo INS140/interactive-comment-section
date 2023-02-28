@@ -7,6 +7,8 @@ body {
     font-family: 'Rubik', Arial, Helvetica, sans-serif;
 }
 
+button { cursor: pointer; }
+
 /* FOOTER */
 
 .attribution {
@@ -19,8 +21,8 @@ body {
 /* COMMENT */
 
 .comment-card {
-    margin: 10px;
-    padding: 10px;
+    margin: 20px;
+    padding: 20px;
     background: white;
     display: grid;
     grid-template-areas: 
@@ -28,6 +30,7 @@ body {
     'content content content'
     'score . options'
     ;
+    align-items: center;
 }
 
 .details {
@@ -43,3 +46,50 @@ body {
 .content-container { grid-area: content; }
 
 .options { grid-area: options; }
+
+.score-container { grid-area: score; }
+
+.score-card {
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    background: hsl(228, 33%, 97%);
+    width: fit-content;
+    height: auto;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.score-card button {
+    border: none;
+    padding: 0;
+    background: inherit;
+    font-size: 1.5rem;
+}
+
+.minus { padding: 0 15px 7px 10px; }
+
+.score { padding: 10px; }
+
+.plus { padding: 0 10px 4px 15px; }
+
+@media only screen and (min-width: 600px) {
+    .comment-card {
+        grid-template-areas: 
+        'score details . options'
+        'score content content content'
+        '. content content content'
+        ;
+        column-gap: 20px;
+    }
+
+    .score-card {
+        height: fit-content;
+        width: auto;
+        flex-direction: column;
+    }
+
+    .plus { padding: 0; }
+
+    .minus { padding: 0 0 10px; }
+}
