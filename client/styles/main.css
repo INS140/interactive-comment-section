@@ -9,6 +9,11 @@ body {
 
 button { cursor: pointer; }
 
+p {
+    color: hsl(211, 10%, 45%);
+    font-size: 1.2rem;
+}
+
 /* FOOTER */
 
 .attribution {
@@ -37,9 +42,15 @@ button { cursor: pointer; }
     display: flex;
     align-items: center;
     grid-area: details;
+    gap: 5%;
 }
 
-.details * { margin-right: 10px; }
+.details h2 {
+    color: hsl(212, 24%, 26%);
+    font-size: 1.1rem;
+}
+
+/* .details * { margin-right: 1.25rem; } */
 
 .profile-img { width: 12%; }
 
@@ -47,10 +58,26 @@ button { cursor: pointer; }
 
 .options { grid-area: options; }
 
-.score-container { grid-area: score; }
+.options button {
+    color: hsl(238, 40%, 52%);
+    font-size: 1.1rem;
+    font-weight: 700;
+    border: none;
+    background: inherit;
+}
+
+.score-container {
+    grid-area: score;
+    display: flex;
+    justify-content: flex-start;
+    height: 100%;
+    width: 100%;
+}
 
 .score-card {
+    color: hsl(238, 40%, 52%);
     font-size: 1.2rem;
+    font-weight: 500;
     display: flex;
     align-items: center;
     background: hsl(228, 33%, 97%);

@@ -35,7 +35,9 @@ export function Comment({ comment }) {
                 </div>
             </div>
             <div className="options">
-                <button>Reply</button>
+                <button>
+                    <img src="/images/icon-reply.svg" alt="reply" /> Reply
+                </button>
             </div>
         </div>
     )
